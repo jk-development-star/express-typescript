@@ -3,7 +3,7 @@ import { createAuthor, getAllAuthors } from "../controller/Author";
 
 const router = express.Router();
 
-router.post("/create", createAuthor);
-router.get("/authors", getAllAuthors);
+router.post("/", createAuthor);
+router.get("/", getAllAuthors);
 
 export default router;
